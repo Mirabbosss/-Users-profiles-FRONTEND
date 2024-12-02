@@ -23,7 +23,7 @@ export const HomePage = () => {
   return (
     <div className="mx-auto max-w-[1440px] w-full container">
       <div className="grid grid-cols-1 sm:flex flex-wrap gap-2">
-        {users.map((user) => (
+        {users?.map((user) => (
           <Card key={user.id} user={user} />
         ))}
       </div>
