@@ -35,7 +35,7 @@ export const FormPage = () => {
 
         try {
             await axios.post(
-                `${import.meta.env.VITE_BASE_URL}/api/users`,
+                `${import.meta.env.VITE_API_BASE_URL}/api/users`,
                 data,
                 {
                     headers: {

@@ -10,7 +10,7 @@ export const HomePage = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/api/users`);
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/users`);
         setUsers(response.data.data);
       } catch (error) {
         console.error("Error:", error);
